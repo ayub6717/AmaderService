@@ -1,0 +1,31 @@
+.ClientBack{
+    background-image: url("https://cdn1.bbcode0.com/uploads/2021/3/11/9e73ba2f9f23b022f4f1bc9035b0e959-full.png");
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.ClientText{
+    text-align: center;
+    font-size: 60px;
+}
+
+.rec-shadow{
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow:    3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
+    box-shadow:         3px 3px 5px 6px #ccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+    border-radius:10px;
+    padding: 10px !important;
+
+}
+
+.call-bg{
+    background-color: rgba(43, 189, 121, 0.815);
+    color: white;
+}
+.call-btn{
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    padding-right: 50px;
+}

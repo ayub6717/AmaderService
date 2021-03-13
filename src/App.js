@@ -10,12 +10,12 @@ function App() {
   return (
     <div className="App">
       <SelectItem /> <br/>
-      <FindCategory /> <br/>
-      <Recommended /> <br/>
-      <Recommended /> <br/>
-      <AdvertisingArea /> <br/>
-      <Recommended /> <br/>
-      <Recommended /> <br/>
+      <FindCategory /> <br/> <br/>
+      <Recommended /> <br/> <br/>
+      <Recommended /> <br/> <br/>
+      <AdvertisingArea /> <br/> <br/>
+      <Recommended /> <br/> <br/>
+      <Recommended /> <br/> <br/>
       <MultiComponents />
     </div>
   );

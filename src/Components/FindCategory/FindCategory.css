@@ -6,7 +6,7 @@
 }
 
 .img-border{
-    border: 10px solid#BEE0D4;
+    border: 10px solid#87e2c2;
     border-radius: 30px !important;
     text-align: center;
     height:130px;
@@ -22,3 +22,17 @@ border-radius: 50px;
 padding: 30px; 
 }
 
+.img-effect{
+    -webkit-box-shadow: 3px 1px 3px 3px rgba(2, 12, 19, 0.452);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow:    3px 1px 3px 3px rgba(12, 0, 0, 0.336);  /* Firefox 3.5 - 3.6 */
+    box-shadow:         3px 1px 3px 3px rgba(20, 1, 1, 0.37);  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+    padding: 6px; 
+    border-radius: 20px;
+}
+
+
+.con-style{
+    margin-top:-100px;
+    background-color: white;
+    border-radius: 50px;
+}

@@ -1,11 +1,33 @@
+@font-face {
+    font-family: 'a Astro Space';
+    src: url(./../Fonts/AstroSpace-0Wl3o.otf);
+}.call-pic{
+   width: 50%;
+   padding-bottom:20px
+}
+.head-font h1{
+    font-size: 80px;
+}
+
+.head-font h2{
+    font-size: 40px;
+}
+.select-one h5{
+margin-top: 25px;
+font-family:"a Astro Space";
+}
+
 .img-width{
     width: 25%;
 }
 .SelectItem{
-    background-image: url("https://cdn1.bbcode0.com/uploads/2021/3/10/27ef6b50b2e7393e27d357dc742918b4-full.jpg");
-    width: 100%;
-    height: auto;     
+  background: url("./../back.jpg") no-repeat center center;
+  background-size: cover;
+  height: 500px;
+}
     
+.head-font{
+    font-family:"a Astro Space"; 
 }
 
 .select-one{
@@ -14,8 +36,10 @@
     -moz-box-shadow:    3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
     box-shadow:         3px 3px 5px 6px #ccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
     /* width: 90%; */
-    padding: 15px;
+    padding: 30px;
     background-color: rgb(255, 255, 255);
+    height: 300px;
+    width: 80%;
 }
 
 *

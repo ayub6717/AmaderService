@@ -8,21 +8,23 @@ import { BiSearchAlt2 } from "react-icons/bi";
 
 function SelectItem() {
     return (
-        <div>
-            <div className="SelectItem">
+        <div className="SelectItem">
+            <div >
                 <div className="container" style={{ padding: "30px" }}>
                     <div className="row">
-                        <div className="col-sm-6" style={{ fontFamily: "as" }}>
-                            <img style={{ width: "50%" }} src="/img/AnotherPic/call.png" alt="" />
-                            <h1>Your</h1>
-                            <h1 style={{ fontSize: "50px" }}>Trasted</h1>
-                            <h3 style={{ fontSize: "30px" }} >Service Partner</h3>
-                            <p>get all servicies you need in one place <br /> from professional expart, at home!</p>
-                            <span><img className="img-width" src="/img/play-store.png" alt="play-store" />  <img className="img-width" src="/img/play-store.png" alt="play-store" /></span>
+                        <div className="col-sm-6">
+                            <img className="call-pic" src="/img/AnotherPic/call.png" alt="" />
+                            <div className="head-font">
+                                <h3>Your</h3>
+                                <h1 >Trasted</h1>
+                                <h2 >Service Partner</h2>
+                            </div>
+                            <p>Get all servicies you need in one place <br /> from professional expart, at home!</p>
+                            <span><img className="img-width" src="/img/app-store.png" alt="app-store.png" />  <img className="img-width" src="/img/play-store.png" alt="play-store" /></span>
                         </div>
                         <div className="col-sm-6">
                             <div className="select-one">
-                                <h5 style={{ marginTop: "25px" }}>Get Any Service, Any Time</h5>
+                                <h5>Get Any Service, Any Time</h5>
                                 <div class="form-group">
                                     <label for="sel1">< IoLocationSharp style={{ color: "green" }} /> Select Location</label>
                                     <select class="form-control" id="sel1">

@@ -1,6 +1,5 @@
 import logo from './logo.svg';
-// import './App.css';
-import SelectItem from './Components/SelectItem';
+import SelectItem from './Components/SelectItem/SelectItem';
 import Recommended from './Components/Recommended/Recommended';
 import AdvertisingArea from './Components/AdvertisingArea/AdvertisingArea';
 import MultiComponents from './Components/MultiComponents/MultiComponents';
@@ -10,7 +9,8 @@ import ForYourHome from './Components/ForYourHome/ForYourHome';
 function App() {
   return (
     <div className="App">
-      <SelectItem /> <br/>
+      {/* <SelectItem /> <br/> */}
+      <SelectItem />
       <FindCategory /> <br/> <br/>
       <Recommended /> <br/> <br/>
       <ForYourHome /> <br/> <br/>

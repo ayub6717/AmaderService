@@ -1,5 +1,5 @@
 import React from 'react'
-import './../Components/Select.css';
+import './../SelectItem/Select.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import {IoLocationSharp, faTrash, faEye } from "@fortawesome/free-solid-svg-icons";
 import { IoLocationSharp } from "react-icons/io5";

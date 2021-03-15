@@ -14,13 +14,12 @@ function FindCategory() {
 
 
     return (
-        <div className="">
+        <div>
             {/* =======================Modal Start=========================== */}
             <>
-                {/* <Button variant="primary" onClick={handleShow}>Launch demo modal</Button> */}
                 <Modal size="lg" show={show} onHide={handleClose} animation={false}>
                     <Modal.Header closeButton>
-                        <Modal.Title>Modal heading</Modal.Title>
+                        <Modal.Title>Select Your Item</Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
                         <Tab.Container id="left-tabs-example" defaultActiveKey="first">
@@ -37,12 +36,12 @@ function FindCategory() {
                                     ))}
                                 </Col>
                                 <Col sm={7}>
-                                {DataTwo.map((item) => (
-                                    <Tab.Content >
-                                        <Tab.Pane eventKey={item.eventKey} className="img-effect" key={item.id}>
-                                            <span><img style={{ width: "50px" }} src={item.image} alt="AcCategory.png" /></span> <span style={{ display: "inline-block", marginLeft: "15px" }}> <b>{item.name}</b> </span>
-                                        </Tab.Pane>
-                                    </Tab.Content>
+                                    {DataTwo.map((item) => (
+                                        <Tab.Content >
+                                            <Tab.Pane eventKey={item.eventKey} key={item.id}>
+                                                <span><img style={{ width: "50px" }} src={item.image} alt="AcCategory.png" /></span> <span style={{ display: "inline-block", marginLeft: "15px" }}> <b>{item.name}</b> </span>
+                                            </Tab.Pane>
+                                        </Tab.Content>
                                     ))}
                                 </Col>
                             </Row>
@@ -51,9 +50,6 @@ function FindCategory() {
                     <Modal.Footer>
                         <Button variant="secondary" onClick={handleClose}>
                             Close
-                        </Button>
-                        <Button variant="primary" onClick={handleClose}>
-                            Save Changes
                         </Button>
                     </Modal.Footer>
                 </Modal>
@@ -79,8 +75,6 @@ function FindCategory() {
                     ))}
                 </div>
             </div>
-
-
         </div>
     )
 }

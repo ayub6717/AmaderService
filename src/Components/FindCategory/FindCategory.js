@@ -1,91 +1,86 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './FindCategory.css'
+import { Modal, ModalTitle, ModalBody, ModalFooter, Button, Tab, TabContainer, TabContent, TabPane, Row, Col, Nav } from 'react-bootstrap'
+import Data from './../../data/Category.json'
+import DataTwo from './../../data/CategoryTwo.json'
+
+
 
 function FindCategory() {
+    const [show, setShow] = useState(false);
+
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+
+
     return (
-        <div class="container con-style">
-            <div class="row row-cols-5 col-width">
-                <div class="col col-pad">
-                    <div className="img-border">
-                        <div className="img-effect">
-                            <img className="img-category" src="/img/MainCategory/AcCategory.png" alt="AcCategory.png" />
-                            <h6 style={{ paddingTop: "20px" }}>AC Repair</h6>
+        <div className="">
+            {/* =======================Modal Start=========================== */}
+            <>
+                {/* <Button variant="primary" onClick={handleShow}>Launch demo modal</Button> */}
+                <Modal size="lg" show={show} onHide={handleClose} animation={false}>
+                    <Modal.Header closeButton>
+                        <Modal.Title>Modal heading</Modal.Title>
+                    </Modal.Header>
+                    <Modal.Body>
+                        <Tab.Container id="left-tabs-example" defaultActiveKey="first">
+                            <Row>
+                                <Col sm={5}>
+                                    {Data.map((item) => (
+                                        <Nav variant="pills" className="flex-column">
+                                            <Nav.Item key={item.id}>
+                                                <Nav.Link eventKey={item.eventKey}>
+                                                    <span><img style={{ width: "25px" }} src={item.image} alt="AcCategory.png" /></span> <span style={{ display: "inline-block", marginLeft: "15px" }}> <b>{item.name}</b> </span>
+                                                </Nav.Link>
+                                            </Nav.Item>
+                                        </Nav>
+                                    ))}
+                                </Col>
+                                <Col sm={7}>
+                                {DataTwo.map((item) => (
+                                    <Tab.Content >
+                                        <Tab.Pane eventKey={item.eventKey} className="img-effect" key={item.id}>
+                                            <span><img style={{ width: "50px" }} src={item.image} alt="AcCategory.png" /></span> <span style={{ display: "inline-block", marginLeft: "15px" }}> <b>{item.name}</b> </span>
+                                        </Tab.Pane>
+                                    </Tab.Content>
+                                    ))}
+                                </Col>
+                            </Row>
+                        </Tab.Container>
+                    </Modal.Body>
+                    <Modal.Footer>
+                        <Button variant="secondary" onClick={handleClose}>
+                            Close
+                        </Button>
+                        <Button variant="primary" onClick={handleClose}>
+                            Save Changes
+                        </Button>
+                    </Modal.Footer>
+                </Modal>
+            </>
+            {/* =======================Modal end=========================== */}
+
+
+            {/* =========================CateGory========================= */}
+
+            <div class="container con-style">
+                <div class="row row-cols-5 col-width">
+                    {Data.map((item) => (
+                        <div class="col col-pad" onClick={handleShow} >
+                            <a style={{ textDecoration: "none", color: "black" }} href="#see_category">
+                                <div className="img-border">
+                                    <div className="img-effect" key={item.id}>
+                                        <img className="img-category" data-toggle="modal" data-target="#myModal" src={item.image} alt="AcCategory.png" />
+                                        <h6 style={{ paddingTop: "20px" }}>{item.name}</h6>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
-                    </div>
-                </div>
-                <div class="col col-pad">
-                    <div className="img-border">
-                        <div className="img-effect">
-                            <img className="img-category" src="/img/MainCategory/AppliencRepair.png" alt="AppliencRepair.png" />
-                            <h6 style={{ paddingTop: "20px" }}>Appliance Repair</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="col col-pad">
-                    <div className="img-border">
-                        <div className="img-effect">
-                            <img className="img-category" src="/img/MainCategory/BeautySalon mainCategory.png" alt="BeautySalon mainCategory.png" />
-                            <h6 style={{ paddingTop: "20px" }}>Beauty & Salon</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="col col-pad">
-                    <div className="img-border">
-                        <div className="img-effect">
-                            <img className="img-category" src="/img/MainCategory/cleaning.png" alt="" />
-                            <h6 style={{ paddingTop: "20px" }}>Cleaning</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="col col-pad">
-                    <div className="img-border">
-                        <div className="img-effect">
-                            <img className="img-category" src="/img/MainCategory/Electrical.png" alt="" />
-                            <h6 style={{ paddingTop: "20px" }}>Electrical</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="col col-pad col-pad">
-                    <div className="img-border">
-                        <div className="img-effect">
-                            <img className="img-category img-cat" src="/img/MainCategory/Shifting.png" alt="" />
-                            <h6 style={{ paddingTop: "20px" }}>Shifting</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="col col-pad">
-                    <div className="img-border">
-                        <div className="img-effect">
-                            <img className="img-category" src="/img/MainCategory/Plumbing& Sanitary.png" alt="Plumbing& Sanitary.png" />
-                            <h6 style={{ paddingTop: "20px" }}>Plumbing & Sanitary</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="col col-pad">
-                    <div className="img-border">
-                        <div className="img-effect">
-                            <img className="img-category" src="/img/MainCategory/Painting& Renovation.png" alt="" />
-                            <h6>Painting & Renovation</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="col col-pad">
-                    <div className="img-border">
-                        <div className="img-effect">
-                            <img className="img-category" src="/img/MainCategory/PestControl.png" alt="PestControl.png" />
-                            <h6 style={{ paddingTop: "20px" }}>Pest Control</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="col col-pad">
-                    <div className="img-border">
-                        <div className="img-effect">
-                            <img className="img-category" src="/img/MainCategory/Others.png" alt="Others.png" />
-                            <h6 style={{ paddingTop: "20px" }}>Others</h6>
-                        </div>
-                    </div>
+                    ))}
                 </div>
             </div>
+
+
         </div>
     )
 }

@@ -1,0 +1,82 @@
+[
+    {
+        "id": "1",
+        "service_type_id": "1",
+        "name": "Ac Repair Service",
+        "image": "img/MainCategory/AcCategory.png",
+        "link_id": "1",
+        "eventKey": "first"
+    },
+    {
+        "id": "2",
+        "service_type_id": "10",
+        "name": "Appliance Repair",
+        "image": "img/MainCategory/AppliencRepair.png",
+        "link_id": "10",
+        "eventKey": "second"
+    },
+    {
+        "id": "3",
+        "service_type_id": "11",
+        "name": "Beauty & Salon",
+        "image": "img/MainCategory/BeautySalon mainCategory.png",
+        "link_id": "11",
+        "eventKey": "third"
+    },
+    {
+        "id": "4",
+        "service_type_id": "54",
+        "name": "Cleaning",
+        "image": "img/MainCategory/cleaning.png",
+        "link_id": "54",
+        "eventKey": "fourth"
+    },
+    {
+        "id": "5",
+        "service_type_id": "54",
+        "name": "Electrical",
+        "image": "img/MainCategory/Electrical.png",
+        "link_id": "54",
+        "eventKey": "five"
+    },
+    {
+        "id": "6",
+        "service_type_id": "54",
+        "name": "Shipting",
+        "image": "img/MainCategory/Shifting.png",
+        "link_id": "54",
+        "eventKey": "six"
+    },
+    {
+        "id": "7",
+        "service_type_id": "54",
+        "name": "Plumbing & Sanitary",
+        "image": "img/MainCategory/Plumbing& Sanitary.png",
+        "link_id": "54",
+        "eventKey": "seven"
+    },
+    {
+        "id": "8",
+        "service_type_id": "54",
+        "name": "Painting & Renovation",
+        "image": "img/MainCategory/Painting& Renovation.png",
+        "link_id": "54",
+        "eventKey": "eight"
+    },
+    {
+        "id": "9",
+        "service_type_id": "54",
+        "name": "Pest Control",
+        "image": "img/MainCategory/PestControl.png",
+        "link_id": "54",
+        "eventKey": "nine"
+    },
+    {
+        "id": "10",
+        "service_type_id": "54",
+        "name": "Others",
+        "image": "img/MainCategory/Others.png",
+        "link_id": "54",
+        "eventKey": "ten"
+    }
+]

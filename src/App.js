@@ -5,6 +5,7 @@ import Recommended from './Components/Recommended/Recommended';
 import AdvertisingArea from './Components/AdvertisingArea/AdvertisingArea';
 import MultiComponents from './Components/MultiComponents/MultiComponents';
 import FindCategory from './Components/FindCategory/FindCategory';
+import ForYourHome from './Components/ForYourHome/ForYourHome';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <SelectItem /> <br/>
       <FindCategory /> <br/> <br/>
       <Recommended /> <br/> <br/>
+      <ForYourHome /> <br/> <br/>
       <Recommended /> <br/> <br/>
       <AdvertisingArea /> <br/> <br/>
       <Recommended /> <br/> <br/>

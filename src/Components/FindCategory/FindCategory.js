@@ -3,6 +3,7 @@ import './FindCategory.css'
 import { Modal, ModalTitle, ModalBody, ModalFooter, Button, Tab, TabContainer, TabContent, TabPane, Row, Col, Nav } from 'react-bootstrap'
 import Data from './../../data/Category.json'
 import DataTwo from './../../data/CategoryTwo.json'
+import { faTrash, faTruckMonster } from '@fortawesome/free-solid-svg-icons'
 
 
 
@@ -17,14 +18,14 @@ function FindCategory() {
         <div>
             {/* =======================Modal Start=========================== */}
             <>
-                <Modal size="lg" show={show} onHide={handleClose} animation={false}>
+                <Modal size="lg" show={show} onHide={handleClose} animation={true}>
                     <Modal.Header closeButton>
                         <Modal.Title>Select Your Item</Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
                         <Tab.Container id="left-tabs-example" defaultActiveKey="first">
                             <Row>
-                                <Col sm={5}>
+                                <Col sm={5} className="Bg-a">
                                     {Data.map((item) => (
                                         <Nav variant="pills" className="flex-column">
                                             <Nav.Item key={item.id}>
@@ -37,9 +38,9 @@ function FindCategory() {
                                 </Col>
                                 <Col sm={7}>
                                     {DataTwo.map((item) => (
-                                        <Tab.Content >
-                                            <Tab.Pane eventKey={item.eventKey} key={item.id}>
-                                                <span><img style={{ width: "50px" }} src={item.image} alt="AcCategory.png" /></span> <span style={{ display: "inline-block", marginLeft: "15px" }}> <b>{item.name}</b> </span>
+                                        <Tab.Content>
+                                            <Tab.Pane eventKey={item.eventKey} key={item.id}  className="content-border">
+                                                <span style={{ padding:"5px",paddingLeft:"15px", display:"inline-block"}}><img style={{ width: "30px" }} src={item.image} alt="AcCategory.png" /></span> <span style={{ display: "inline-block", marginLeft: "15px" }}> <b>{item.name}</b> </span>
                                             </Tab.Pane>
                                         </Tab.Content>
                                     ))}
@@ -62,15 +63,13 @@ function FindCategory() {
             <div class="container con-style">
                 <div class="row row-cols-5 col-width">
                     {Data.map((item) => (
-                        <div class="col col-pad" onClick={handleShow} >
-                            <a style={{ textDecoration: "none", color: "black" }} href="#see_category">
+                        <div class="col col-pad" onClick={handleShow} style={{cursor:"pointer"}}>
                                 <div className="img-border">
                                     <div className="img-effect" key={item.id}>
-                                        <img className="img-category" data-toggle="modal" data-target="#myModal" src={item.image} alt="AcCategory.png" />
+                                        <img className="img-category"  data-toggle="modal" data-target="#myModal" src={item.image} alt="AcCategory.png" />
                                         <h6 style={{ paddingTop: "20px" }}>{item.name}</h6>
                                     </div>
                                 </div>
-                            </a>
                         </div>
                     ))}
                 </div>

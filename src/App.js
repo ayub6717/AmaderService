@@ -5,6 +5,7 @@ import AdvertisingArea from './Components/AdvertisingArea/AdvertisingArea';
 import MultiComponents from './Components/MultiComponents/MultiComponents';
 import FindCategory from './Components/FindCategory/FindCategory';
 import ForYourHome from './Components/ForYourHome/ForYourHome';
+import Slider from './Components/Slider/Slider';
 
 function App() {
   return (
@@ -14,7 +15,6 @@ function App() {
       <FindCategory /> <br/> <br/>
       <Recommended /> <br/> <br/>
       <ForYourHome /> <br/> <br/>
-      <Recommended /> <br/> <br/>
       <AdvertisingArea /> <br/> <br/>
       <Recommended /> <br/> <br/>
       <Recommended /> <br/> <br/>

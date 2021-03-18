@@ -74,6 +74,9 @@ a {
     width: 100%;
     font-size: 17px !important;
 }
+.modal-body {
+    padding-bottom: 0rem !important;
+}
 .Bg-a{
     background-color: rgba(149, 194, 175, 0.315);
     padding-top: 10px;

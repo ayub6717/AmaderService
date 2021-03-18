@@ -1,8 +1,8 @@
-import React from 'react'
-import Data from './../../data/home.json'
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-
+import React from 'react'
+import Data from './../../data/home.json'
+// import './../Recommended/Recommended.css'
 
 const responsive = {
     superLargeDesktop: {
@@ -24,14 +24,11 @@ const responsive = {
     }
 };
 
-
-
-function ForYourHome() {
+function Slider() {
     return (
-        <div>
-            <div className="container">
-                <span className="rec-shadow1" style={{marginBottom:"20px", display:"inline-block"}}> <b>For Your Home</b> </span>
-                <Carousel responsive={responsive}>
+        <div className="container">
+
+            <Carousel responsive={responsive}>
                 {/* <div style={{backgroundColor:"red"}}>Item 1</div>
                 <div style={{backgroundColor:"red"}}>Item 1</div>
                 <div style={{backgroundColor:"red"}}>Item 1</div>
@@ -43,14 +40,17 @@ function ForYourHome() {
                     <div key={item.id}  >
                         <div className="rec-shadow2">
                             <img className="rec-img1" src={item.image} alt="" />
-                            <h6 style={{ paddingTop: "17px", textAlign: "center", fontSize:"17px" }}>{item.name}</h6>
+                            <h5 style={{ paddingTop: "17px", textAlign: "center" }}>{item.name}</h5>
                         </div>
                     </div>
                 ))}
             </Carousel>
-            </div>
         </div>
     )
 }
 
-export default ForYourHome
+export default Slider
+
+
+
+

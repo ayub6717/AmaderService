@@ -11,7 +11,7 @@ function Recommended() {
                         <div className=" col-sm-3 " key={item.id} style={{paddingTop:"30px"}} >
                             <div className="rec-shadow">
                                 <img className="rec-img" src={item.image} alt="" />
-                                <h5 style={{paddingTop:"17px", textAlign:"center"}}>{item.name}</h5>
+                                <h5 style={{paddingTop:"17px", textAlign:"center",fontSize:"17px"}}>{item.name}</h5>
                             </div>
                         </div>
                     ))}

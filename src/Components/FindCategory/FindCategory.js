@@ -22,7 +22,7 @@ function FindCategory() {
                     <Modal.Header closeButton>
                         <Modal.Title>Select Your Item</Modal.Title>
                     </Modal.Header>
-                    <Modal.Body style={{ margin:"10px"}}>
+                    <Modal.Body>
                         <Tab.Container id="left-tabs-example" defaultActiveKey="first">
                             <Row>
                                 <Col sm={5} className="Bg-a">

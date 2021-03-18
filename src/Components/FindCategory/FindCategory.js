@@ -18,11 +18,11 @@ function FindCategory() {
         <div>
             {/* =======================Modal Start=========================== */}
             <>
-                <Modal size="lg" show={show} onHide={handleClose} animation={true}>
+                <Modal size="lg" show={show} onHide={handleClose} animation={true} >
                     <Modal.Header closeButton>
                         <Modal.Title>Select Your Item</Modal.Title>
                     </Modal.Header>
-                    <Modal.Body>
+                    <Modal.Body style={{ margin:"10px"}}>
                         <Tab.Container id="left-tabs-example" defaultActiveKey="first">
                             <Row>
                                 <Col sm={5} className="Bg-a">
@@ -36,7 +36,7 @@ function FindCategory() {
                                         </Nav>
                                     ))}
                                 </Col>
-                                <Col sm={7}>
+                                <Col sm={7} className="Bg-b">
                                     {DataTwo.map((item) => (
                                         <Tab.Content>
                                             <Tab.Pane eventKey={item.eventKey} key={item.id}  className="content-border">
@@ -48,11 +48,11 @@ function FindCategory() {
                             </Row>
                         </Tab.Container>
                     </Modal.Body>
-                    <Modal.Footer>
+                    {/* <Modal.Footer>
                         <Button variant="secondary" onClick={handleClose}>
                             Close
                         </Button>
-                    </Modal.Footer>
+                    </Modal.Footer> */}
                 </Modal>
             </>
             {/* =======================Modal end=========================== */}

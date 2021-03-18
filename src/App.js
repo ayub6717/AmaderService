@@ -12,9 +12,11 @@ function App() {
     <div className="App">
       {/* <SelectItem /> <br/> */}
       <SelectItem />
-      <FindCategory /> <br/> <br/>
-      <Recommended /> <br/> <br/>
+      <FindCategory /> <br/> <br/> <br/>
+      <Recommended /> <br/> <br/> <br/>
       <ForYourHome /> <br/> <br/>
+
+      {/* <Slider /> <br/> <br/> */}
       <AdvertisingArea /> <br/> <br/>
       <Recommended /> <br/> <br/>
       <Recommended /> <br/> <br/>

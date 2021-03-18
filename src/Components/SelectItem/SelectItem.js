@@ -16,7 +16,7 @@ function SelectItem() {
                             <img className="call-pic" src="/img/AnotherPic/call.png" alt="" />
                             <div className="head-font">
                                 <h3>Your</h3>
-                                <h1 >Trasted</h1>
+                                <h1 >Trusted</h1>
                                 <h2 >Service Partner</h2>
                             </div>
                             <p>Get all servicies you need in one place <br /> from professional expart, at home!</p>

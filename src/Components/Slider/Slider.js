@@ -2,7 +2,6 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import React from 'react'
 import Data from './../../data/home.json'
-// import './../Recommended/Recommended.css'
 
 const responsive = {
     superLargeDesktop: {
@@ -36,14 +35,15 @@ function Slider() {
                 <div style={{backgroundColor:"red"}}>Item 1</div>
                 <div style={{backgroundColor:"red"}}>Item 1</div> */}
 
-                {Data.map((item) => (
-                    <div key={item.id}  >
-                        <div className="rec-shadow2">
-                            <img className="rec-img1" src={item.image} alt="" />
-                            <h5 style={{ paddingTop: "17px", textAlign: "center" }}>{item.name}</h5>
+                    {Data.map((item) => (
+                        <div key={item.id} style={{ padding: "15px" }} >
+                            <div className="rec-shadow">
+                                <img className="rec-img" src={item.image} alt="" />
+                                <h5 style={{ paddingTop: "17px", textAlign: "center", fontSize: "17px" }}>{item.name}</h5>
+                            </div>
                         </div>
-                    </div>
-                ))}
+                    ))}
+
             </Carousel>
         </div>
     )

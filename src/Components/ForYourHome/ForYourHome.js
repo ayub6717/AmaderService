@@ -30,24 +30,17 @@ function ForYourHome() {
     return (
         <div>
             <div className="container">
-                <span className="rec-shadow1" style={{marginBottom:"20px", display:"inline-block"}}> <b>For Your Home</b> </span>
+                <span className="rec-shadow1" style={{ marginBottom: "20px", display: "inline-block" }}> <b>For Your Home</b> </span>
                 <Carousel responsive={responsive}>
-                {/* <div style={{backgroundColor:"red"}}>Item 1</div>
-                <div style={{backgroundColor:"red"}}>Item 1</div>
-                <div style={{backgroundColor:"red"}}>Item 1</div>
-                <div style={{backgroundColor:"red"}}>Item 1</div>
-                <div style={{backgroundColor:"red"}}>Item 1</div>
-                <div style={{backgroundColor:"red"}}>Item 1</div> */}
-
-                {Data.map((item) => (
-                    <div key={item.id}  >
-                        <div className="rec-shadow2">
-                            <img className="rec-img1" src={item.image} alt="" />
-                            <h6 style={{ paddingTop: "17px", textAlign: "center", fontSize:"17px" }}>{item.name}</h6>
+                    {Data.map((item) => (
+                        <div key={item.id} style={{ padding: "15px" }} >
+                            <div className="rec-shadow">
+                                <img className="rec-img" src={item.image} alt="" />
+                                <h5 style={{ paddingTop: "17px", textAlign: "center", fontSize: "17px" }}>{item.name}</h5>
+                            </div>
                         </div>
-                    </div>
-                ))}
-            </Carousel>
+                    ))}
+                </Carousel>
             </div>
         </div>
     )

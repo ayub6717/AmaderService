@@ -1,6 +1,6 @@
 import React from 'react'
 import './../SelectItem/Select.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import {IoLocationSharp, faTrash, faEye } from "@fortawesome/free-solid-svg-icons";
 import { IoLocationSharp } from "react-icons/io5";
 import { BiSearchAlt2 } from "react-icons/bi";

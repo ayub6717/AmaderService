@@ -1,11 +1,9 @@
 import { useState } from "react";
 import Modal from 'react-bootstrap/Modal'
-import ModalDialog from 'react-bootstrap/ModalDialog'
-import ModalHeader from 'react-bootstrap/ModalHeader'
-import ModalTitle from 'react-bootstrap/ModalTitle'
-import ModalBody from 'react-bootstrap/ModalBody'
-import ModalFooter from 'react-bootstrap/ModalFooter'
+// import{ ModalDialog, ModalHeader, ModalTitle, ModalBody, ModalFooter   } from 'react-bootstrap/Modal'
 import {Button} from 'react-bootstrap'
+
+
 
 function Example() {
     const [show, setShow] = useState(false);

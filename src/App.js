@@ -5,18 +5,14 @@ import AdvertisingArea from './Components/AdvertisingArea/AdvertisingArea';
 import MultiComponents from './Components/MultiComponents/MultiComponents';
 import FindCategory from './Components/FindCategory/FindCategory';
 import ForYourHome from './Components/ForYourHome/ForYourHome';
-import Slider from './Components/Slider/Slider';
 
 function App() {
   return (
     <div className="App">
-      {/* <SelectItem /> <br/> */}
       <SelectItem />
       <FindCategory /> <br/> <br/> <br/>
       <Recommended /> <br/> <br/> <br/>
       <ForYourHome /> <br/> <br/>
-
-      {/* <Slider /> <br/> <br/> */}
       <AdvertisingArea /> <br/> <br/>
       <Recommended /> <br/> <br/>
       <Recommended /> <br/> <br/>

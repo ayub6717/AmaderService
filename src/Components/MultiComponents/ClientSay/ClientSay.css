@@ -22,6 +22,7 @@
 .call-bg{
     background-color: rgba(43, 189, 121, 0.815);
     color: white;
+    margin-bottom: -24px;
 }
 .call-btn{
     border: none;

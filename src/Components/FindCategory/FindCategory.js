@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import './FindCategory.css'
-import { Modal, ModalTitle, ModalBody, ModalFooter, Button, Tab, TabContainer, TabContent, TabPane, Row, Col, Nav } from 'react-bootstrap'
+import { Modal, Tab, Row, Col, Nav } from 'react-bootstrap'
 import Data from './../../data/Category.json'
 import DataTwo from './../../data/CategoryTwo.json'
-import { faTrash, faTruckMonster } from '@fortawesome/free-solid-svg-icons'
+// import { faTrash, faTruckMonster } from '@fortawesome/free-solid-svg-icons'
 
 
 

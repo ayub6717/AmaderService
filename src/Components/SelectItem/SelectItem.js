@@ -12,7 +12,7 @@ function SelectItem() {
             <div >
                 <div className="container" style={{ padding: "30px" }}>
                     <div className="row">
-                        <div className="col-sm-6">
+                        <div className="col-sm-6 T-center">
                             <img className="call-pic" src="/img/AnotherPic/call.png" alt="" />
                             <div className="head-font">
                                 <h3>Your</h3>
@@ -24,7 +24,7 @@ function SelectItem() {
                         </div>
                         <div className="col-sm-6">
                             <div className="select-one">
-                                <h5>Get Any Service, Any Time</h5>
+                                <h5 className="get">Get Any Service, Any Time</h5>
                                 <div class="form-group">
                                     <label for="sel1">< IoLocationSharp style={{ color: "green" }} /> Select Location</label>
                                     <select class="form-control" id="sel1">

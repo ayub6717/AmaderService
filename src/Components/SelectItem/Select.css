@@ -43,6 +43,90 @@ font-family:"a Astro Space";
     
 }
 
+/* ***********************************media************************ */
+
+@media only screen and (max-width: 992px) {
+    .head-font h1{
+        font-size: 40px;
+    }
+    
+    .head-font h2{
+        font-size: 20px;
+    }
+    .select-one {
+        border-radius: 10px;
+        padding: 30px;
+        width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 767px) {
+
+    
+    .head-font h2{
+        font-size: 20px;
+    }
+    .select-one {
+        border-radius: 10px;
+        padding: 20px;
+        width: none ;
+    }
+    .get{
+        
+        font-size: 15px;
+        }
+        .container, .container-sm {
+            max-width: 90% !important;
+        }
+  }
+
+
+
+  @media only screen and (max-width: 575px) {
+    .T-center{
+        text-align: center;
+    }
+    .head-font h1{
+        font-size: 30px;
+    }
+    .head-font h3{
+        font-size: 20px;
+    }
+    .head-font h2{
+        font-size: 15px;
+    }
+    .select-one {
+        border-radius: 10px;
+        margin-top: 30px;
+        width: none ;
+    }
+    .get{
+        
+        font-size: 15px;
+        }
+        .container, .container-sm {
+            max-width: 90% !important;
+        }
+
+        .SelectItem{
+            
+            height:750px;
+          }
+  }
+
+
+
+  /* @media only screen and (max-width: 768px) {
+    
+    .select-one {
+        border-radius: 10px;
+        margin-top: 30px;
+        width: none ;
+    }
+    
+  } */
+
+
 *
 {
     -webkit-user-select: none;

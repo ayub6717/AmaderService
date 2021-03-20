@@ -46,13 +46,13 @@ function Footer() {
 
                         <div className=" col-sm-4 col-md  col-12 col">
                             <h5 className="headin5_amrc col_white_amrc pt2">Download App</h5>
-                            <p>Tackle your to-do list wherever you are with our mobile app & make your life easy.</p>
+                            <p> Download to easily find your desire service from our app .</p>
                             <div className="row">
                                 <div className="col-sm-6" style={{padding:"10px"}}>
                                     <img style={{width: "120px"}} src="img/app-store.png" alt="" />
                                 </div> 
                                 <div className="col-sm-6" style={{padding:"10px"}}>
-                                    <img style={{width: "120px"}} src="img/play-store.png" alt="" />
+                                    <img style={{width: "120px"}} src="img/play-store.png" alt="" /> 
                                 </div>
                             </div>
                         </div>
@@ -61,7 +61,7 @@ function Footer() {
 
 
                 <div className="container"> <br />
-                    <p className="text-center">Copyright © 2020 Amader Service Limited | All Rights Reserved</p>
+                    <p className="text-center">Copyright © 2020 Amader Service Global Limited | All Rights Reserved</p>
                 </div>
 
             </footer>

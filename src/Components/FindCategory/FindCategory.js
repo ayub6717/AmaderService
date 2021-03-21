@@ -30,7 +30,7 @@ function FindCategory() {
                                         <Nav variant="pills" className="flex-column">
                                             <Nav.Item key={item.id}>
                                                 <Nav.Link eventKey={item.eventKey}>
-                                                    <span><img style={{ width: "25px" }} src={item.image} alt="AcCategory.png" /></span> <span style={{ display: "inline-block", marginLeft: "15px" }}> <b>{item.name}</b> </span>
+                                                    <span><img style={{ width: "25px" }} src={item.image} alt="AcCategory.png" /></span> <span className="cate-name" > <b>{item.name}</b> </span>
                                                 </Nav.Link>
                                             </Nav.Item>
                                         </Nav>
@@ -40,7 +40,7 @@ function FindCategory() {
                                     {DataTwo.map((item) => (
                                         <Tab.Content>
                                             <Tab.Pane eventKey={item.eventKey} key={item.id}  className="content-border">
-                                                <span style={{ padding:"5px",paddingLeft:"15px", display:"inline-block"}}><img style={{ width: "30px" }} src={item.image} alt="AcCategory.png" /></span> <span style={{ display: "inline-block", marginLeft: "15px" }}> <b>{item.name}</b> </span>
+                                                <span style={{ padding:"5px",paddingLeft:"15px", display:"inline-block"}}><img style={{ width: "30px" }} src={item.image} alt="AcCategory.png" /></span> <span className="cate-name"> <b>{item.name}</b> </span>
                                             </Tab.Pane>
                                         </Tab.Content>
                                     ))}

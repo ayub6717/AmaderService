@@ -47,7 +47,7 @@ function Footer() {
                         <div className=" col-sm-4 col-md  col-12 col">
                             <h5 className="headin5_amrc col_white_amrc pt2">Download App</h5>
                             <p> Download to easily find your desire service from our app .</p>
-                            <div className="row">
+                            <div className="row" style={{textAlign:"center"}}>
                                 <div className="col-sm-6" style={{padding:"10px"}}>
                                     <img style={{width: "120px"}} src="img/app-store.png" alt="" />
                                 </div> 

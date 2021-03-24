@@ -5,6 +5,10 @@ import AdvertisingArea from './Components/AdvertisingArea/AdvertisingArea';
 import MultiComponents from './Components/MultiComponents/MultiComponents';
 import FindCategory from './Components/FindCategory/FindCategory';
 import ForYourHome from './Components/ForYourHome/ForYourHome';
+import Slider from './Components/Slider/Slider';
+import Service from './Components/Services/Service';
+import PersonalCare from './Components/PersonalCare/PersonalCare';
+import Trending from './Components/Trending/Trending';
 
 function App() {
   return (
@@ -14,8 +18,8 @@ function App() {
       <Recommended /> <br/> <br/> <br/>
       <ForYourHome /> <br/> <br/>
       <AdvertisingArea /> <br/> <br/>
-      <Recommended /> <br/> <br/>
-      <Recommended /> <br/> <br/>
+      <PersonalCare /> <br/> <br/>
+      <Trending /> <br/> <br/>
       <MultiComponents />
     </div>
   );

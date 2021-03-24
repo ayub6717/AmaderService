@@ -11,6 +11,7 @@ import Orders from './Components/Pages/Orders';
 import { Route, Link, BrowserRouter as Router } from "../node_modules/react-router-dom";
 import Login from './Components/Pages/Login';
 import Footer from './Components/Footer/Footer';
+import Service from './Components/Services/Service';
 
 
 
@@ -29,6 +30,8 @@ const myrouter = (
             <Nav.Link><span id="fa" class="fas fa-cart-plus"></span> <a ><Link style={{textDecoration:"none"}} to="/Orders"> Orders</Link></a> </Nav.Link>
             <Nav.Link href="#home"><span id="fa" class="fas fa-location-arrow"></span> Badda</Nav.Link>
             <Nav.Link ><span id="fa" class="fas fa-sign-in-alt"></span> <Login /> </Nav.Link>
+            <Nav.Link><span id="fa" class="fas fa-cart-plus"></span> <a ><Link style={{textDecoration:"none"}} to="/Service"> Service</Link></a> </Nav.Link>
+
           </Nav>
         </Form>
       </Navbar.Collapse>
@@ -39,6 +42,8 @@ const myrouter = (
 
       <Route exact path="/" component={App} />
       <Route path="/Orders" component = {Orders} />
+      <Route path="/Service" component = {Service} />
+
     </div>
   </Router>
 

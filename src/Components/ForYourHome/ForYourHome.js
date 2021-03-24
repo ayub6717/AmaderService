@@ -1,7 +1,10 @@
-import React from 'react'
-import Data from './../../data/home.json'
+import React, { useEffect, useState } from "react";
+// import Data from './../../data/home.json'
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+
+// ..........................
+import { Link } from "react-router-dom";
 
 
 const responsive = {
@@ -27,16 +30,35 @@ const responsive = {
 
 
 function ForYourHome() {
+    useEffect(() => {
+        fetchItem();
+    }, []);
+
+    const [item, setItem] = useState([]);
+
+
+    const fetchItem = async () => {
+        const link =
+            "https://kentradigital.com/api/gethome";
+        const data = await fetch(link);
+        const item = await data.json();
+        setItem(item);
+    };
     return (
         <div>
             <div className="container">
                 <span className="rec-shadow1" style={{ marginBottom: "20px", display: "inline-block" }}> <b>For Your Home</b> </span>
                 <Carousel responsive={responsive}>
-                    {Data.map((item) => (
+                    {item.map((item) => (
                         <div key={item.id} style={{ padding: "15px" }} >
                             <div className="rec-shadow">
-                                <img className="rec-img" src={item.image} alt="" />
-                                <h5 style={{ paddingTop: "17px", textAlign: "center", fontSize: "17px" }}>{item.name}</h5>
+                                <Link
+                                    style={{ textDecoration: "none", color: "33669A", margin: 0, }}
+                                    to={item.link_id}
+                                >
+                                    <img className="rec-img" src={item.image} alt="" />
+                                    <h5 style={{ paddingTop: "17px", textAlign: "center", fontSize: "17px" }}>{item.name}</h5>
+                                </Link>
                             </div>
                         </div>
                     ))}

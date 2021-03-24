@@ -1,7 +1,9 @@
+import React, { useEffect, useState } from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import React from 'react'
+// import React from 'react'
 import Data from './../../data/home.json'
+
 
 const responsive = {
     superLargeDesktop: {
@@ -24,6 +26,18 @@ const responsive = {
 };
 
 function Slider() {
+
+    // useEffect(() => {
+    //     fetchItem();
+    //   },[]);
+    //   const [item, setItem] = useState([]);
+    //   const fetchItem = async () => {
+    //     const link =
+    //       "./../../data/home.json";
+    //     const data = await fetch(link);
+    //     const item = await data.json();
+    //     setItem(item);
+    //   };
     return (
         <div className="container">
 
